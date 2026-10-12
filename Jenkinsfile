@@ -11,13 +11,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'python A32_A28_EXP5'
+                bat '"C:\\Users\\KETKI\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" A32_A28_EXP5'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'python test.py'
+                bat '"C:\\Users\\KETKI\\AppData\\Local\\Programs\\Python\\Python311\\python.exe" test.py'
             }
         }
     }
